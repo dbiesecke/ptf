@@ -1,32 +1,33 @@
 #!/usr/bin/env python
 #####################################
-# Installation module for dnscat2
+# Installation module for sqlmap
 #####################################
 
 # AUTHOR OF MODULE NAME
-AUTHOR="Jens Muecke (ryd)"
+AUTHOR="Matt Presson (matt_presson)"
 
 # DESCRIPTION OF THE MODULE
-DESCRIPTION="This module will install/update dnscat2"
+DESCRIPTION="This module will install/update sqlmap"
 
 # INSTALL TYPE GIT, SVN, FILE DOWNLOAD
 # OPTIONS = GIT, SVN, FILE
 INSTALL_TYPE="GIT"
 
 # LOCATION OF THE FILE OR GIT/SVN REPOSITORY
-REPOSITORY_LOCATION="https://github.com/iagox86/dnscat2.git"
+REPOSITORY_LOCATION="https://github.com/sqlmapproject/sqlmap"
 
 # WHERE DO YOU WANT TO INSTALL IT
-INSTALL_LOCATION="dnscat2"
+INSTALL_LOCATION="sqlmap"
 
 # DEPENDS FOR DEBIAN INSTALLS
-DEBIAN="ruby ruby-dev git-core build-essential make"
+DEBIAN="git"
 
 # DEPENDS FOR FEDORA INSTALLS
-FEDORA="git,make,gcc,gcc-c++,ruby-irb,rubygems,rubygem-bundler,ruby-devel,git"
+FEDORA="git"
 
 # COMMANDS TO RUN AFTER
-AFTER_COMMANDS="cd {INSTALL_LOCATION}/server,bundle install"
+AFTER_COMMANDS=""
 
 # THIS WILL CREATE AN AUTOMATIC LAUNCHER FOR THE TOOL
-LAUNCHER=""
+LAUNCHER="sqlmap"
+
