@@ -1,4 +1,58 @@
 ~~~~~~~~~~~~~~~~~
+version 1.7
+~~~~~~~~~~~~~~~~~
+
+* added customized xml handler for zaproxy and added new zaproxy module
+* fixed metasploit 2.3 installation for pg install and updated ruby installer
+* fixed a few out of date ruby modules
+* added silent installation for apt-get - shouldn't prompt anymore
+* added single module install for debian, this will ensure that if theres an out of date package it doesnt hold back the rest of the depends from building right
+
+~~~~~~~~~~~~~~~~~
+version 1.6.6
+~~~~~~~~~~~~~~~~~
+
+* fixed tab completion double slashes appearing
+* fixed an issue that would cause ignore modules to not be accurate and still install
+
+~~~~~~~~~~~~~~~~~
+version 1.6.5
+~~~~~~~~~~~~~~~~~
+
+* added multiple new password recovery tools thanks to Martin Bos (@CantComputer)
+
+~~~~~~~~~~~~~~~~~
+version 1.6.4
+~~~~~~~~~~~~~~~~~
+
+* fixed mana install location
+* added depend of python-pymssql to SET
+
+~~~~~~~~~~~~~~~~~
+version 1.6.3
+~~~~~~~~~~~~~~~~~
+
+* fixed install location to properly work
+* removed sslsplit, python2-dpkt, python-pypcap
+* added new function for detection in Kali
+* added smart detection for Kali to not install Metasploit on there - packages are different
+* added pep8 compliance to PTF
+* added compatibility to python3 (doesn't mean modules will support python3 - just that ptf is python 3 if you wish
+
+~~~~~~~~~~~~~~~~~
+version 1.6.2
+~~~~~~~~~~~~~~~~~
+
+* fixed an issue with hydra not installing ldap-utils
+* ssl certificate issue fixed with openvas (cert does not match)
+
+~~~~~~~~~~~~~~~~~
+version 1.6.1
+~~~~~~~~~~~~~~~~~
+
+* add a remove from Gemfile.lock in order to ensure proper git pulls
+
+~~~~~~~~~~~~~~~~~
 version 1.6
 ~~~~~~~~~~~~~~~~~
 
